@@ -1,0 +1,79 @@
+.html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0; padding: 0; border: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 5rem 9%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.show {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.player {
+    text-align: center;
+    margin-left: 600px;
+}
+
+.board {
+    width: 505px;
+    height: 505px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    border: 1px solid black;
+    margin: 0 auto 3rem;
+}
+  
+.cell {
+    display: flex; justify-content: center; align-items: center; 
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 50px;
+}
+  
+.cell:hover {
+    background-color: rgba(238,238,238, 0.8)
+}
+
+.cell.cross, .cell.circle {
+    cursor: not-allowed;
+}
+
+.cell.cross {
+    color: red;
+}
+
+.cell.circle {
+    color: blue;
+}
+  
+button {
+    margin: 20px auto 0; padding: 12px;
+    display: block;
+    cursor: pointer;
+}
+
+.cross {
+    background-image: url(./assets/x-mark.png); background-repeat: no-repeat;
+    background-position: center;
+    z-index: 999;
+}
+
+.circle {
+    background-image: url(./assets/o-mark.png); background-repeat: no-repeat;
+    background-position: center;
+    z-index: 999;
+}
